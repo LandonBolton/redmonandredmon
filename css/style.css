@@ -1,3 +1,586 @@
-body{
-background-color: blue;
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+div.dropdown {
+  display: none;
+  margin: 0 auto;
+  right: 2px;
+  top: 1px;
+  position: fixed;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+nav {
+  background-color: rgba(160, 160, 160, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding-left: 0px;
+  padding: right 100px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  font-family: Cinzel;
+  z-index: 1;
+  border-bottom: 1px solid grey;
+}
+nav.black {
+  background-color: rgba(124, 124, 124, 0.34);
+}
+nav .logo {
+  padding: 10px 22px;
+  padding-left: 5px;
+  padding: right 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 80px;
+  float: left;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+nav.black .logo {
+  color: #fff;
+}
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+  display: flex;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  font-weight: bold;
+}
+
+nav ul li a {
+  line-height: 80px;
+  color: #151515;
+  text-decoration: none;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  right: 0;
+  margin-right: 3px;
+  border-radius: 6px;
+}
+
+nav ul li a:focus {
+  outline: none;
+}
+
+section.sec1 {
+  width: 100%;
+  height: 100vh;
+}
+.content {
+  width: 75%;
+  margin: 3vh auto;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Cormorant Garamond", serif;
+  background-color: rgba(251, 248, 218, 0.3);
+  padding: 5px 35px;
+}
+ul li a {
+  background-color: white;
+  box-shadow: 2px 2px 0px black;
+}
+
+.center {
+  display: block;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+li a:hover {
+  background-color: grey;
+  color: white;
+  box-shadow: 1px 1px 0px white;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+nav.black li a:hover {
+  background-color: #555;
+  color: white;
+}
+ul .active {
+  background-color: #ffa948;
+}
+nav .black ul .active {
+  background-color: #ffa948;
+}
+video {
+  z-index: -100;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+.bannercontain {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+.bannertext {
+  color: white;
+  width: 95%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: fixed;
+  margin: 0 auto;
+  top: 45vh;
+  background-color: rgba(20, 102, 222, 0.8);
+  font-size: 120%;
+  font-weight: bold;
+  border-radius: 5px;
+  left: 0;
+  right: 0;
+  border: 1px solid white;
+  text-shadow: 2px 2px navy;
+}
+video#fullcover {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(http://www.redmonandredmon.com/wp-content/uploads/2016/01/slider-top-homepage-compressed.mp4)
+    no-repeat;
+  background-size: cover;
+}
+img {
+  width: 550px;
+}
+video {
+  display: block;
+}
+p.about {
+  margin: 0 auto;
+  width: 80%;
+  color: white;
+  font-size: 178%;
+  position: inherit;
+  line-height: 130%;
+  font-weight: normal;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Cinzel;
+  color: white;
+  font-size: 40px;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 4%;
+  text-shadow: 0px 0px 10px white;
+}
+
+.dropbtn {
+  border-radius: 5px;
+  color: navy;
+  background-color: #d1f6f3;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Cinzel;
+  margin: 0 auto;
+  margin-top: 1vh;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d1f6f3;
+  min-width: 160px;
+  opacity: 0.95;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  right: 2px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: navy;
+  padding: 10px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(20, 102, 222, 0.8);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgba(20, 102, 222, 0.8);
+}
+.dropdown .active {
+  background-color: orange;
+}
+@media only screen and (max-width: 1300px){
+  nav ul li a {
+  padding: 12px 15px;
+  }
+  p.about {
+    font-size: 170%;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  nav ul li a {
+    padding: 12px 25px;
+  }
+  p.about {
+    font-size: 170%;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  nav ul li a {
+    padding: 12px 15px;
+  }
+  p.about {
+    font-size: 170%;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  nav ul li a {
+    padding: 12px 13px;
+  }
+  p.about {
+    font-size: 170%;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  nav ul li a {
+    padding: 12px 12px;
+  }
+  nav ul {
+    top: 2px;
+  }
+  p.about {
+    font-size: 170%;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  nav ul li a {
+    padding: 12px 9px;
+  }
+  img {
+    width: 350px;
+  }
+  nav {
+    height: 80px;
+  }
+  p.about {
+    font-size: 165%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  img {
+    width: 330px;
+  }
+  p.about {
+    font-size: 165%;
+  }
+}
+@media only screen and (max-width: 940px) {
+  img {
+    width: 320px;
+  }
+  p.about {
+    font-size: 160%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  img {
+    width: 310px;
+  }
+  p.about {
+    font-size: 155%;
+  }
+}
+@media only screen and (max-width: 860px) {
+  img {
+    width: 300px;
+  }
+  nav {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+    p.about {
+    font-size: 150%;
+  }
+  h1 {
+  font-size: 30px;
+}
+}
+@media only screen and (max-width: 820px) {
+  img {
+    width: 290px;
+  }
+  .bannertext {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 30%;
+    font-size: 80%;
+  }
+  p.about {
+    font-size: 135%;
+  }
+  h1 {
+  text-align: center;
+  font-family: Cinzel;
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+}
+@media screen and (max-device-width: 800px) {
+  html {
+    background: url(http://www.redmonandredmon.com/wp-content/uploads/2016/01/slider-top-homepage-compressed.mp4)
+      #000 no-repeat center center fixed;
+  }
+  #bgvid {
+    display: none;
+  }
+  .bannertext {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 30%;
+    font-size: 80%;
+  }
+  p.about {
+    font-size: 125%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  img {
+    width: 280x;
+  }
+  p.about {
+    font-size: 120%;
+  }
+  nav ul li a {
+    display: none;
+  }
+  nav {
+    height: 55px;
+  }
+  div.dropdown {
+    display: block;
+  }
+}
+@media only screen and (max-width: 740px) {
+  img {
+    width: 270px;
+  }
+  p.about {
+    font-size: 120%;
+  }
+  .aboutus{
+    min-height: 800px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  img {
+    width: 260px;
+  }
+  p.about {
+    font-size: 120%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  img {
+    width: 250px;
+  }
+  p.about {
+    font-size: 120%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  img {
+    width: 200px;
+  }
+  p.about {
+    font-size: 95%;
+  }
+  div.aboutus{
+    margin-top: 55px;
+  }
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 18px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: vertical;
+  background-color: lightblue;
+  border-style: none;
+  box-shadow: 0px 7px 5px black;
+}
+input[type="submit"] {
+  background-color: turquoise;
+  color: black;
+  padding: 12px 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;]
+  margin-bottom: 10px;
+}
+input[type="submit"]:hover {
+  background-color: navy;
+  color: white;
+  box-shadow: 3px 3px 5px grey;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 13%;
+  max-width: 70%;
+  border: 1px solid white;
+  background-color: rgba(256, 256, 256, 0.2);
+  opacity: 0.7;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0px 0px 5vw white;
+  max-height: 90vh;
+  min-height: 550px;
+  margin-bottom: 20px;
+}
+img.background {
+  height: 130%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+div.aboutus {
+  margin: 0 auto;
+  margin-top: 13%;
+  margin-bottom: 13%;
+  max-width: 70%;
+  border: 2px solid black;
+  background-color: rgba(256, 256, 256, 0.2);
+  opacity: 0.9;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  box-shadow: 0px 0px 5vw white;
+  height: 530px;
+}
+p.center{
+  margin: 0 auto;
+  position: inherit;
+  text-align: center;
+}
+hr{
+  border-width: 1px;
+  border-color: white;
+  box-shadow: 0px 0px 10px white;
+  position: inherit;
+}
+img.savannah{
+  width: 100%;
+  height: 100%;
+  margin-bottom: -50px;
+  margin: 0 auto;
+  display: block;
+}
+img.selmer{
+  width: 100%;
+  margin-bottom: -20px;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+div.pictures{
+  margin: 0 auto;
+  margin-top: 13%;
+  max-width: 60%;
+  padding: 20px;
+  border: 1px solid grey;
+  background-color: rgba(0, 0, 0 0.3);
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  box-shadow: 0px 0px 5vw white;
+  position: relative;
+  min-height: 200px;
+}
+div.selmlocation{
+  margin: 0;
+}
+h1.textimage{
+  position: absolute;
+  color: white;
+  font-size: 160%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  
+}
+div.savannahlocation{
+  margin: 0;
+  position: relative;
 }
