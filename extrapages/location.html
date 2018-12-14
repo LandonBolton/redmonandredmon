@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Redmon&Redmon</title>
+  <!--[if lt IE 9]>
+<script>
+	document.createElement('video');
+</script>
+<![endif]-->
+  <script src="https://code.jquery.com/jquery-3.2.1.js">
+  </script>
+  <script type="text/javascript">
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav, ul').addClass('black');
+      } else {
+        $('nav, ul').removeClass('black');
+      }
+    })
+  </script>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Cinzel');
+  @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:600');
+</style>
+
+<body>
+    <nav>
+      <div class="logo">
+        <img src="https://i.postimg.cc/9M3fNbXV/redmonlogo.png" </img>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#"class="active">Location</a>
+          <a href="#">Contact Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">Events</a>
+        </div>
+      </div>
+      <ul>
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#"class="active">Location</a></li>
+        <li> <a href="#">Contact Us</a></li>
+        <li> <a href="#">FAQ</a></li>
+        <li> <a href="#">Events</a></li>
+      </ul>
+    </nav>
+  <img class="background" src="https://wallpapercave.com/wp/wp2872748.jpg" />
+  <div class="pictures">
+    <div class="selmlocation">
+      <h1 class="textimage">Selmer Location<br />
+451 Mulberry Avenue<br />
+Selmer, TN 38375<br />
+Phone:<br />
+731.645.6839<br />
+Hours of Operation:<br />
+M-F 9:00am-6:30pm, Sat 9:00am – Until</h1>
+    <img class="selmer"src="https://i.ibb.co/Hdpw7W8/Capture.png">
+    </div>
+    <div class="savannahlocation">
+      <h1 class="textimage">Savannah Location<br />
+490 Wayne Rd<br />
+Savannah, TN 38372<br />
+Phone:<br />
+731.925.1070<br />
+Hours of Operation:<br />
+M-F 9:00am – 5:00pm, Sat 9:00am-12:00pm<br />
+(Additional times available by appointment)<h1>
+  <img class="savannah" src="https://i.ibb.co/Y3095Zs/savannah.png">
+    </div>
+  </div>
+</body>
+</html>
