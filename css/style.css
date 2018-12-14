@@ -156,14 +156,13 @@ video {
   position: fixed;
   margin: 0 auto;
   top: 45vh;
-  background-color: rgba(20, 102, 222, 0.1);
+  background-color: rgba(256, 256, 256, 0.6);
   font-size: 115%;
   font-weight: bold;
   border-radius: 4px;
   left: 0;
   right: 0;
-  border: 1px solid grey;
-  text-shadow: 0px 0px 20px black;
+  text-shadow: 0px 0px 50px white;
 }
 video#fullcover {
   position: fixed;
