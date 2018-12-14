@@ -1,8 +1,7 @@
-# redmonandredmon
-Creators: Phillip Eauclaire & Landon Bolton
- -
+Competition Site v.1
+--------------------
 This is our DevCatalyst competition submission.
- -
+
 This website consists of:
 - Simple Layout
 - 5 Extra Pages
@@ -11,3 +10,5 @@ This website consists of:
 Feautures:
 - few graphics
 - php contact form
+
+Creators: Phillip Eauclaire & Landon Bolton
