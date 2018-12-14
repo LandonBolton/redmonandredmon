@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Redmon&Redmon</title>
+  <!--[if lt IE 9]>
+<script>
+	document.createElement('video');
+</script>
+<![endif]-->
+  <script src="https://code.jquery.com/jquery-3.2.1.js">
+  </script>
+  <script type="text/javascript">
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav, ul').addClass('black');
+      } else {
+        $('nav, ul').removeClass('black');
+      }
+    })
+  </script>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Cinzel');
+  @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:600');
+</style>
+
+<body>
+    <nav>
+      <div class="logo">
+        <img src="https://i.postimg.cc/9M3fNbXV/redmonlogo.png" </img>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Location</a>
+          <a href="#" class="active">Contact Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">Events</a>
+        </div>
+      </div>
+      <ul>
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">Location</a></li>
+        <li> <a href="#" class="active">Contact Us</a></li>
+        <li> <a href="#">FAQ</a></li>
+        <li> <a href="#">Events</a></li>
+      </ul>
+    </nav>
+  <img class="background" src="https://wallpapercave.com/wp/wp2872748.jpg" />
+  <div class="aboutus">
+    <h1> Upcoming Events </h1>
+    <hr>
+    <p class="center">There are currently no upcoming events. </p>
+</div>
+</body>
+</html>
