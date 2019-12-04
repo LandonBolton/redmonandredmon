@@ -7,7 +7,7 @@ This website consists of:
 - 5 Extra Pages
 - About, Contact, FAQ, Location, Events
 
-Feautures:
+Features:
 - few graphics
 - php contact form
 
